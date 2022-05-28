@@ -1,0 +1,24 @@
+.payment {
+    display: flex;
+
+}
+
+.payment img {
+    width: 400px;
+    height: 300px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .payment {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .payment img {
+        width: 250px;
+
+    }
+
+
+}

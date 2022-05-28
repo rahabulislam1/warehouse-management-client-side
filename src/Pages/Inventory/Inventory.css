@@ -1,0 +1,20 @@
+.inventory {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.product-details {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.add-items {
+    width: 75%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: palegreen;
+}

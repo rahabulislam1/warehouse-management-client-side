@@ -1,0 +1,18 @@
+.card {
+    /* height: 500px; */
+    width: 350px;
+    border: 1px solid gray;
+    background-color: lightcyan;
+}
+
+.card img {
+    height: 350px;
+}
+
+
+.card-button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

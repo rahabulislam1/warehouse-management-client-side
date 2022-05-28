@@ -2,6 +2,33 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Website Name
+
+( HR Collection )
+
+### Live Website Link 
+
+
+
+### Description 
+
+* This project is based on bike warehouse management.
+* In the home section we have a navbar, then we show some of our products.then we show some of customers review and our payment method.
+* In the inventory section we can add quantity of an individual item and delivered option.
+* In the additems section we can add new products.
+* one blog section where we answed some questions.
+* if user is login we can manage some section.
+
+### Technology Used
+
+* react router
+* react bootstrap
+* firebase
+* react firebase hooks
+* react toastify
+* mongodb
+* express js
+
 ## Available Scripts
 
 In the project directory, you can run:

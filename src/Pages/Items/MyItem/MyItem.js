@@ -16,7 +16,7 @@ const MyItem = (params) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://thawing-sands-12388.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -10,7 +10,7 @@ const Inventory = () => {
     const [product, setProduct] = useState({});
     const [user] = useAuthState(auth);
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://thawing-sands-12388.herokuapp.com/product/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -29,7 +29,7 @@ const Inventory = () => {
             const updatedProduct = { quantity, sold };
             const newProduct = { name, description, price, img, quantity: updatedProduct.quantity, sold: updatedProduct.sold, supplierName, email }
             setProduct(newProduct);
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://thawing-sands-12388.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -58,7 +58,7 @@ const Inventory = () => {
         const updatedProduct = { quantity, sold };
         const newProduct = { name, description, price, img, quantity: updatedProduct.quantity, sold: updatedProduct.sold, supplierName, email }
         setProduct(newProduct);
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://thawing-sands-12388.herokuapp.com/product/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -85,7 +85,7 @@ const Inventory = () => {
         const updatedData = {
             name, price, description, img, sold, quantity, supplierName, email
         };
-        fetch(`http://localhost:5000/product/${id}`, {
+        fetch(`https://thawing-sands-12388.herokuapp.com/product/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -52,7 +52,7 @@ const Login = () => {
 
     const from = location.state?.from?.pathname || "/";
     if (user) {
-        // 
+        navigate('/');
     }
     if (loading) {
         <Loading></Loading>

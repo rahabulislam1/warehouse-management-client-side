@@ -1,4 +1,5 @@
 import React from 'react';
+import './SocialLogin.css';
 import google from '../../../Images/Logo/google.png'
 import gitHub from '../../../Images/Logo/GitHub-Mark.png'
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
@@ -30,8 +31,8 @@ const SocialMedia = () => {
             </div>
             <p className='text-danger'>{errorMessage}</p>
             <div className='text-center'>
-                <button onClick={() => signInWithGoogle()} className='w-50 btn btn-info mb-2'><img className='pe-2' src={google} alt="" /> Google Login</button><br />
-                <button onClick={() => signInWithGithub()} className='w-50 btn btn-info mb-2'><img className='pe-2' src={gitHub} alt="" /> Github Login</button>
+                <button onClick={() => signInWithGoogle()} className='w-50 btn btn-clr mb-2'><img className='pe-2' src={google} alt="" /> Google Login</button><br />
+                <button onClick={() => signInWithGithub()} className='w-50 btn btn-clr mb-2'><img className='pe-2' src={gitHub} alt="" /> Github Login</button>
             </div>
 
         </div>

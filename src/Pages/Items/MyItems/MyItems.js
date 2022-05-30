@@ -13,7 +13,7 @@ const MyItems = () => {
     const email = user?.email;
     useEffect(() => {
         const products = async () => {
-            const url = `https://thawing-sands-12388.herokuapp.com/products/email?email=${email}`;
+            const url = `https://stark-thicket-17199.herokuapp.com/products/email?email=${email}`;
             fetch(url)
                 .then(res => res.json())
                 .then(data => setItems(data))

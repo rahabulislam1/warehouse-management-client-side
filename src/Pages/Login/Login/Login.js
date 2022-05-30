@@ -32,7 +32,7 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('https://thawing-sands-12388.herokuapp.com/login', { email })
+        const { data } = await axios.post('https://stark-thicket-17199.herokuapp.com/login', { email })
         // console.log(data);
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });
